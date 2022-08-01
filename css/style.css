@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+}
+
+#product-preview {
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#product-preview .product-container {
+  display: flex;
+  justify-content: space-between;
+}
+#product-preview .product-container .product-image {
+  width: 50%;
+}
+#product-preview .product-container .product-image img {
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+#product-preview .product-container .product-details {
+  width: 50%;
+  padding: 3em 3em;
+}
+#product-preview .product-container .product-details .item-title {
+  text-transform: uppercase;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 0.75rem;
+  letter-spacing: 7px;
+  margin-bottom: 1.5em;
+}
+#product-preview .product-container .product-details .item-name,
+#product-preview .product-container .product-details .current-price {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+}
+#product-preview .product-container .product-details .item-name {
+  color: hsl(212deg, 21%, 14%);
+  margin-bottom: 1em;
+}
+#product-preview .product-container .product-details .item-description {
+  color: hsl(228deg, 12%, 48%);
+  letter-spacing: 0.8px;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+#product-preview .product-container .product-details .price {
+  display: flex;
+}
+#product-preview .product-container .product-details .price .current-price {
+  margin-bottom: 1.7rem;
+  color: hsl(158deg, 36%, 37%);
+}
+#product-preview .product-container .product-details .price .old-price {
+  font-size: 0.9rem;
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+  padding: 0.8em 1.5em 0 1.5em;
+}
+#product-preview .product-container .product-details .item-button {
+  background-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 1.2em 0;
+}
+#product-preview .product-container .product-details .item-button:hover {
+  background-color: rgb(27, 97, 71);
+}
+#product-preview .product-container .product-details .item-button img {
+  padding-right: 0.5em;
+}
+
+@media (max-width: 1370px) {
+  #product-preview {
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  #product-preview {
+    max-width: 400px;
+  }
+  #product-preview .product-container .product-details {
+    padding: 2em;
+  }
+  #product-preview .product-container .product-details .item-title {
+    font-size: 0.5rem;
+  }
+  #product-preview .product-container .product-details .item-name {
+    font-size: 1rem;
+  }
+  #product-preview .product-container .product-details .item-description {
+    font-size: 0.5rem;
+    margin-bottom: 1.5em;
+  }
+  #product-preview .product-container .product-details .price .current-price {
+    font-size: 1rem;
+  }
+  #product-preview .product-container .product-details .price .old-price {
+    font-size: 0.45rem;
+  }
+  #product-preview .product-container .product-details .item-button {
+    font-size: 0.7rem;
+    padding: 0.5em;
+  }
+}
+@media (max-width: 450px) {
+  #product-preview {
+    max-width: 200px;
+  }
+  #product-preview .product-container {
+    flex-direction: column;
+  }
+  #product-preview .product-container .product-image {
+    width: 100%;
+  }
+  #product-preview .product-container .product-image img {
+    border-radius: 10px 10px 0 0;
+  }
+  #product-preview .product-container .product-details {
+    width: 100%;
+    padding: 1em 2em;
+  }
+  #product-preview .product-container .product-details .item-title {
+    font-size: 0.4rem;
+  }
+  #product-preview .product-container .product-details .item-name {
+    font-size: 1.1rem;
+  }
+  #product-preview .product-container .product-details .item-description {
+    font-size: 0.4rem;
+    margin-bottom: 2em;
+  }
+  #product-preview .product-container .product-details .price .current-price {
+    font-size: 0.8rem;
+    margin-bottom: 1em;
+  }
+  #product-preview .product-container .product-details .price .old-price {
+    font-size: 0.4rem;
+  }
+  #product-preview .product-container .product-details .item-button {
+    font-size: 0.5rem;
+    padding: 0.7em;
+  }
+  #product-preview .product-container .product-details .item-button img {
+    width: 10%;
+  }
+}/*# sourceMappingURL=style.css.map */
