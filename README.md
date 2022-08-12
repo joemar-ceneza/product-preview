@@ -40,9 +40,9 @@ Users should be able to:
 - Flexbox
 - Desktop First Workflow
 
-# Front-end Style Guide
+## Front-end Style Guide
 
-## Layout
+### Layout
 
 The designs were created to the following widths:
 
