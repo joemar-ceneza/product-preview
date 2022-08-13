@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-[![product-preview](https://user-images.githubusercontent.com/20262557/184285481-6677a0bb-5788-492c-8301-f570ceb03ae4.JPG)](https://joemar-ceneza.github.io/product-preview/)
+[![product-preview](https://user-images.githubusercontent.com/20262557/184469494-f93facb0-86d9-452b-9590-f5045538f6b9.JPG)](https://joemar-ceneza.github.io/product-preview/)
 
 
 ### Links
