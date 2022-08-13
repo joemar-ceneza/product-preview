@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@300;500;700&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -25,11 +26,12 @@ body{
             img{
                 width: 100%;
                 border-radius: 10px 0 0 10px;
+                vertical-align: middle;
             }
         }
         .product-details{
             width: 50%;
-            padding: 3em 3em;
+            padding: 3em;
             .item-title{
                 text-transform: uppercase;
                 color: hsl(228, 12%, 48%);
@@ -50,22 +52,27 @@ body{
                 color: hsl(228, 12%, 48%);
                 letter-spacing: 0.8px;
                 line-height: 1.6;
-                margin-bottom: 2.5rem;
+                margin-bottom: 2rem;
             }
             .price{
                 display: flex;
+                align-items: center;
+                margin-bottom: 2.5em;
                 .current-price{
-                    margin-bottom: 1.7rem;
                     color: hsl(158, 36%, 37%);;
                 }
                 .old-price{
                     font-size: 0.9rem;
+                    font-weight: 500;
                     color: hsl(228, 12%, 48%);
-                    text-decoration: line-through;
-                    padding: 0.8em 1.5em 0 1.5em;
+                    padding-left: 1em;
+                    text-decoration: line-through;  
                 }
             }
             .item-button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: hsl(158, 36%, 37%);
                 color: hsl(0, 0%, 100%);
                 width: 100%;
@@ -99,13 +106,15 @@ body{
                     font-size: 0.5rem;
                 }
                 .item-name{
-                    font-size: 1rem;
+                    font-size: 1.1rem;
+                    margin-bottom: 0.8em;
                 }
                 .item-description{
                     font-size: 0.5rem;
-                    margin-bottom: 1.5em;
+                    margin-bottom: 1.8em;
                 }
                 .price{
+                    margin-bottom: 1.5em;
                     .current-price{
                         font-size: 1rem;
                     }
@@ -116,6 +125,12 @@ body{
                 .item-button{
                     font-size: 0.7rem;
                     padding: 0.5em;
+                    img{
+                        width: 12%;
+                    }
+                    h4{
+                        font-size: 0.5rem;
+                    }
                 }
             }
         }
@@ -146,9 +161,9 @@ body{
                     margin-bottom: 2em;
                 }
                 .price{
+                    margin-bottom: 0.8em;
                     .current-price{
                         font-size: 0.8rem;
-                        margin-bottom: 1em;
                     }
                     .old-price{
                         font-size: 0.4rem;
@@ -165,366 +180,3 @@ body{
         }
     }
 }
-// @media (max-width: 1203px){
-//     #product-preview{
-//         .product-container{
-//             .product-details{
-//                 .item-title{
-//                     font-size: 0.55rem;
-//                     margin-bottom: 2.3em;
-//                 }
-//                 .item-name{
-//                     font-size: 1.7rem;
-//                     margin-bottom: 1.3em;
-//                 }
-//                 .item-description{
-//                     font-size: 0.65rem;
-//                 }
-//                 .price{
-//                     .current-price{
-//                         font-size: 1.9rem;
-//                     }
-//                     .old-price{
-//                         font-size: 0.7rem;
-//                     }
-//                 }
-//                 .item-button{
-//                     padding: 1em 0;
-//                     font-size: 0.7rem;
-//                 }
-//             }
-//         }
-//     }
-// }
-// @media (max-width: 1167px){
-//     #product-preview{
-//         .product-container{
-//             .product-details{
-//                 padding: 2em 2em;
-//                 .item-title{
-//                     font-size: 0.55rem;
-//                 }
-//                 .item-name{
-//                     font-size: 1.7rem;
-//                 }
-//                 .item-description{
-//                     font-size: 0.65rem;
-//                 }
-//                 .price{
-//                     .current-price{
-//                         font-size: 1.9rem;
-//                     }
-//                     .old-price{
-//                         font-size: 0.7rem;
-//                     }
-//                 }
-//                 .item-button{
-//                     padding: 1em 0;
-//                     font-size: 0.7rem;
-//                 }
-//             }
-//         }
-//     }
-// }
-// @media (max-width: 1055px){
-//     #product-preview{
-//         .product-container{
-//             .product-details{
-//                 padding: 2em 2em;
-//                 .item-title{
-//                     font-size: 0.55rem;
-//                 }
-//                 .item-name{
-//                     font-size: 1.5rem;
-//                 }
-//                 .item-description{
-//                     font-size: 0.70rem;
-//                 }
-//                 .price{
-//                     .current-price{
-//                         font-size: 1.5rem;
-//                     }
-//                     .old-price{
-//                         font-size: 0.6rem;
-//                     }
-//                 }
-//                 .item-button{
-//                     padding: 1em 0;
-//                     font-size: 0.6rem;
-//                 }
-//             }
-//         }
-//     }
-// }
-// @media (max-width: 955px){
-//     #product-preview{
-//         .product-container{
-//             .product-details{
-//                 padding: 2em 1.5em;
-//                 .item-title{
-//                     font-size: 0.50rem;
-//                     margin-bottom: 1.8em;
-//                 }
-//                 .item-name{
-//                     font-size: 1.5rem;
-//                     margin-bottom: 1.2em;
-//                 }
-//                 .item-description{
-//                     font-size: 0.70rem;
-//                 }
-//                 .price{
-//                     .current-price{
-//                         font-size: 1.5rem;
-//                     }
-//                     .old-price{
-//                         font-size: 0.6rem;
-//                     }
-//                 }
-//                 .item-button{
-//                     padding: 1em 0;
-//                     font-size: 0.6rem;
-//                 }
-//             }
-//         }
-//     }
-// }
-// @media (max-width: 900px){
-//     #product-preview{
-//         max-width: 300px;
-//         max-height: 800px;
-//         .product-container{
-//             flex-direction: column;
-//             .product-image{
-//                 width: 100%;
-//                 img{
-//                     border-radius: 10px 10px 0 0;
-//                     width: 100%;
-//                     height: 35vw;
-//                     object-fit: cover;
-//                 }
-                
-//             }
-//             .product-details{
-//                 width: 100%;
-//                 .item-title{
-//                     font-size: 0.75rem;
-//                 }
-//                 .item-name{
-//                     font-size: 1.8rem;
-//                     margin-bottom: 1em;
-//                 }
-//                 .item-description{
-//                     font-size: 0.75rem;
-//                 }
-//             }
-//         }
-//     }
-// }
-// @media (max-width: 800px) {
-//     #product-preview{
-//         .product-container{
-//             .product-image{
-//                 img{
-//                     height: 45vw;
-//                 }
-//             }
-//         }         
-//     }
-// }
-// @media (max-width: 650px) {
-//     #product-preview{
-//         .product-container{
-//             .product-image{
-//                 img{
-//                     height: 60vw;
-//                 }
-//             }
-//         }         
-//     }
-// }
-// // Iphone XR 414 x 896
-// @media screen and (max-width: 414px) and (min-height: 896px){
-//     #product-preview{
-//         .product-container{
-//             .product-image{
-//                 img{
-//                     height: 60vw;
-//                 }
-//             }
-//             .product-details{
-//                 .item-title{
-//                     font-size: 0.55rem;
-//                 }
-//                 .item-name{
-//                     font-size: 1.3rem;
-//                 }
-//                 .item-description{
-//                     font-size: 0.65rem;
-//                 }
-//                 .price{
-//                     .current-price{
-//                         font-size: 1.5rem;
-//                     }
-//                     .old-price{
-//                         font-size: 0.8rem;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-// // Pixel 5 393 x 851
-// @media screen and (max-width: 393px) and (min-height: 851px){
-//     #product-preview{
-//         .product-container{
-//             .product-image{
-//                 img{
-//                     height: 60vw;
-//                 }
-//             }
-//             .product-details{
-//                 .item-title{
-//                     font-size: 0.55rem;
-//                 }
-//                 .item-name{
-//                     font-size: 1.3rem;
-//                 }
-//                 .item-description{
-//                     font-size: 0.65rem;
-//                 }
-//                 .price{
-//                     .current-price{
-//                         font-size: 1.5rem;
-//                     }
-//                     .old-price{
-//                         font-size: 0.8rem;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-// // Iphone 12 Pro 390 x 844
-// @media screen and (max-width: 390px) and (min-height: 844px){
-//     #product-preview{
-//         .product-container{
-//             .product-image{
-//                 img{
-//                     height: 60vw;
-//                 }
-//             }
-//             .product-details{
-//                 .item-title{
-//                     font-size: 0.55rem;
-//                 }
-//                 .item-name{
-//                     font-size: 1.3rem;
-//                 }
-//                 .item-description{
-//                     font-size: 0.65rem;
-//                 }
-//                 .price{
-//                     .current-price{
-//                         font-size: 1.5rem;
-//                     }
-//                     .old-price{
-//                         font-size: 0.8rem;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-// // Iphone SE 375 x 667
-// @media screen and (max-width: 375px) and (min-height: 667px){
-//     #product-preview{
-//         .product-container{
-//             .product-image{
-//                 img{
-//                     height: 60vw;
-//                 }
-//             }
-//             .product-details{
-//                 .item-title{
-//                     font-size: 0.55rem;
-//                 }
-//                 .item-name{
-//                     font-size: 1.3rem;
-//                 }
-//                 .item-description{
-//                     font-size: 0.65rem;
-//                 }
-//                 .price{
-//                     .current-price{
-//                         font-size: 1.5rem;
-//                     }
-//                     .old-price{
-//                         font-size: 0.8rem;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-// // Samsung Galaxy S8+ 360 x 740
-// @media screen and (max-width: 360px) and (min-height: 740px){
-//     #product-preview{
-//         .product-container{
-//             .product-image{
-//                 img{
-//                     height: 70vw;
-//                 }
-//             }
-//             .product-details{
-//                 .item-title{
-//                     font-size: 0.55rem;
-//                 }
-//                 .item-name{
-//                     font-size: 1.3rem;
-//                 }
-//                 .item-description{
-//                     font-size: 0.65rem;
-//                 }
-//                 .price{
-//                     .current-price{
-//                         font-size: 1.5rem;
-//                     }
-//                     .old-price{
-//                         font-size: 0.8rem;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-// // Galaxy Fold 280 x 653
-// @media screen and (max-width: 280px) and (min-height: 653px){
-//     #product-preview{
-//         .product-container{
-//             .product-image{
-//                 img{
-//                     height: 80vw;
-//                 }
-//             }
-//             .product-details{
-//                 .item-title{
-//                     font-size: 0.55rem;
-//                 }
-//                 .item-name{
-//                     font-size: 1.3rem;
-//                 }
-//                 .item-description{
-//                     font-size: 0.65rem;
-//                 }
-//                 .price{
-//                     .current-price{
-//                         font-size: 1.5rem;
-//                     }
-//                     .old-price{
-//                         font-size: 0.8rem;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
